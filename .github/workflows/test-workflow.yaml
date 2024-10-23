@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        sleep 60
+        sleep 20
         echo "hello"
