@@ -1,11 +1,14 @@
 name: Random
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
+
 
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "hello"
+        echo "i was triggered on push to main"
