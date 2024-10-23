@@ -4,9 +4,11 @@ name: Auto Merge Pull Request
 on:
   pull_request
 
+permissions:
+  pull-requests: write
+
 jobs:
   automerge:
-    permissions: write-all
     name: Enable automerge on dependabot PRs
     runs-on: ubuntu-latest
     steps:
