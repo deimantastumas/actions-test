@@ -1,0 +1,11 @@
+name: Random
+
+on:
+  push:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "hello"
