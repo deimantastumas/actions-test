@@ -12,7 +12,8 @@ jobs:
     name: Enable automerge on dependabot PRs
     runs-on: ubuntu-latest
     steps:
-      - run: gh pr merge --merge --auto "1"
+      - uses: actions/checkout@v4
+      - run: gh pr merge --squash --auto "1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
