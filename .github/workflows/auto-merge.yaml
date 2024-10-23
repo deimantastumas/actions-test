@@ -5,7 +5,8 @@ on:
   pull_request
 
 permissions:
-  pull-requests: write
+  contents: write
+  # pull-requests: write
 
 jobs:
   automerge:
