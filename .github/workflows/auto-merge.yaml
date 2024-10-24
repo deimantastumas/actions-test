@@ -17,6 +17,8 @@ jobs:
       
       - name: Approve the PR
         run: gh pr review --approve --body "Approved automatically as the PR originates from IDP" "${{ github.event.number }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
       
       - name: Enable auto-merge
         run: gh pr merge --squash --auto "${{ github.event.number }}"
