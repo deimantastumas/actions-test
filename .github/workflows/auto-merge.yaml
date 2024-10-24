@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Approve the PR
-        run: gh pr review --approve --body "Approved automatically as the PR originates from IDP" "${{ github.event.number }}"
+        run: gh pr review --approve --body "Approved automatically as the PR originates from IDP :white_check_mark:" "${{ github.event.number }}"
         env:
           GH_TOKEN: ${{ github.token }}
       
